@@ -24,9 +24,14 @@ This API communicates with the ACME Payments system to fetch transaction details
 
 To use this API, make HTTP GET requests to the appropriate endpoints with the required parameters. Ensure that you provide valid `merchant_id` and `settlement_date` values.
 
+<!-- Example:
+```http
+GET http://127.0.0.1:8000/settlement/98f9d65c-6dd8-46a9-8850-f5afd9a49013?settlement_date=2022-12-11 HTTP/1.1
+Host: your-api-domain.com -->
+
 ## To get this project running:
 ### 1. Clone the repository:
-Clone this repo to your local machine: `git clone https://github.com/jldelorimier/greystone_labs_coding_challenge.git`
+Clone this repo to your local machine: `git clone https://github.com/jldelorimier/clerq.git` 
 ### 2. Create a virtual environment:
 Navigate to the project directory and create a virtual environment: `python3 -m venv venv`
 ### 3. Activate the virtual environment:
