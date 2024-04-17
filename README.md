@@ -25,7 +25,6 @@ This API communicates with the ACME Payments system to fetch transaction details
 To use this API, make HTTP GET requests to the appropriate endpoints with the required parameters. Ensure that you provide valid `merchant_id` and `settlement_date` values.
 
 Example:
-```http
 GET http://127.0.0.1:8000/settlement/98f9d65c-6dd8-46a9-8850-f5afd9a49013?settlement_date=2022-12-11 HTTP/1.1
 Host: 127.0.0.1:8000
 
