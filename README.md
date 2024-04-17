@@ -33,11 +33,11 @@ Host: your-api-domain.com -->
 ### 1. Clone the repository:
 Clone this repo to your local machine: `git clone https://github.com/jldelorimier/clerq.git` 
 ### 2. Create a virtual environment:
-Navigate to the project directory and create a virtual environment: `python3 -m venv venv`
+Navigate to the project directory `cd clerq`, and create a virtual environment: `python3 -m venv venv`
 ### 3. Activate the virtual environment:
   - macOS/Linux: `source venv/bin/activate`
   - Windows: `venv/Scripts/activate`
 ### 4. Install project dependencies: 
 Run `pip install -r requirements.txt`
 ### 5. Start the application:
-Run the FastAPI server: `uvicorn app.main:app --reload`
+Run the FastAPI server: `uvicorn main:app --reload`
