@@ -40,3 +40,8 @@ Navigate to the project directory `cd clerq`, and create a virtual environment: 
 Run `pip install -r requirements.txt`
 ### 5. Start the application:
 Run the FastAPI server: `uvicorn main:app --reload`
+### 6. See the application running:
+Navigate to `http://127.0.0.1:8000/` in a browser
+### 7. Append the url with necessary data to get the settlement data for a given merchant and date:
+`http://127.0.0.1:8000/settlement/:merchant_id?settlement_date=YYYY-MM-DD`
+Replace `:merchant_id` with the merchant's ID and `YYYY-MM-DD` with the desired settlement date in the format YYYY-MM-DD.
