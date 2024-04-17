@@ -37,7 +37,7 @@ Navigate to the project directory `cd clerq`, and create a virtual environment: 
   - macOS/Linux: `source venv/bin/activate`
   - Windows: `venv/Scripts/activate`
 ### 4. Install project dependencies: 
-Run `pip install -r requirements.txt`
+Run `pip install -r requirements.txt` or `pip3 install -r requirements.txt` depending on your local version.
 ### 5. Start the application:
 Run the FastAPI server: `uvicorn main:app --reload`
 ### 6. See the application running:
