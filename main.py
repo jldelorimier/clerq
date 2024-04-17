@@ -14,7 +14,7 @@ def is_retryable_exception(exception):
   """Return True if the exception is a type that should trigger a retry."""
   return isinstance(exception, (HTTPError, RequestException))
 
-@retry(stop=stop_after_attempt(3), wait=wait_fixed(2), retry=retry_if_exception_type(is_retryable_exception))
+@retry(stop=stop_after_attempt(10), wait=wait_fixed(2), retry=retry_if_exception_type(is_retryable_exception))
 async def make_api_request(merchant_id: str, settlement_date: date):
   api_url = "https://api-engine-dev.clerq.io/tech_assessment/transactions/"    
   response = requests.get(api_url, params={
